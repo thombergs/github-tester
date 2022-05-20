@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1>Test results</h1>
+
+<table>
+    <tr>
+        <th>Authentication method</th>
+        <th>Request URL</th>
+        <th>Result</th>
+        <th>Message</th>
+    </tr>
+    <tr th:each="testCaseResult : ${testCaseResults}">
+        <td th:text="${testCaseResult.authenticationMethod}"></td>
+        <td th:text="${testCaseResult.requestUrl}"></td>
+        <td th:text="${testCaseResult.result.status}"></td>
+        <td th:text="${testCaseResult.result.message}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
