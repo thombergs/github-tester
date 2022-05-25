@@ -23,6 +23,7 @@ Go to https://github.com/settings/apps and create a new GitHub app:
 * give "read-only" access for the "Metadata" permission
 * after hitting "Create", on the following page click the button "Generate a private key" and save the .pem file for later.
 * from the "General" tab of your app, copy the "App ID" and "Client ID" for later use
+* in the "General" tab of your app, generate a client secret and copy it for later use
 
 ### Install the GitHub app into an org
 
@@ -30,11 +31,12 @@ Go to https://github.com/settings/apps and create a new GitHub app:
 * choose one of your orgs and click on "Install"
 * follow the prompts
 
-
 ### Run the test app
 
+* you need Java 17 or higher installed
 * clone this repo
 * copy the private key you downloaded earlier into the file `private-key.pem` in the main folder of the repo
-* copy the "App ID" and "Client ID" into the respective fields in the file `src/main/resources/application.yml`
-
-TODO: describe how to run the test app
+* copy the "App ID", "Client ID", and "Client Secret" into the respective fields in the file `src/main/resources/application.yml`
+* run `./gradlew bootrun` in the main directory of this repo to start the app
+* open your browser at https://localhost:8080 
+* click the "start test" link
