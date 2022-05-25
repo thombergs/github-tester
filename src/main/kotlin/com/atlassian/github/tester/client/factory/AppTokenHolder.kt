@@ -1,4 +1,4 @@
-package com.atlassian.github.test
+package com.atlassian.github.tester.client.factory
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm

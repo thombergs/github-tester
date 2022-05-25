@@ -1,5 +1,15 @@
 <html>
 <body>
-<a th:href="${oauthUrl}">Get user token</a>
+
+<p>
+Please follow the instructions at <a href="https://github.com/thombergs/github-tester">https://github.com/thombergs/github-tester</a>
+before starting this test and restart the app if necessary.
+</p>
+<p>By clicking "Start test" below, you will trigger an OAuth dance in which GitHub will ask you to authorize the GitHub app you created. After the OAuth dance,
+this app will make some requests to the GitHub API and show you the results of those requests.</p>
+
+<p>
+<a th:href="${oauthUrl}">Start test</a>
+</p>
 </body>
 </html>

@@ -1,6 +1,4 @@
-package com.atlassian.github.test.web
-
-import java.security.MessageDigest
+package com.atlassian.github.tester.web
 
 enum class AuthenticationMethod{
     USER_TOKEN,

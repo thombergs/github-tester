@@ -1,4 +1,4 @@
-package com.atlassian.github.test.client
+package com.atlassian.github.tester.client.api
 
 import retrofit2.Call
 import retrofit2.http.GET
@@ -6,6 +6,6 @@ import retrofit2.http.GET
 interface GitHubInstallationClient {
 
     @GET("/installation/repositories")
-    fun getRepositories(): Call<UserInstallationsResponse>
+    fun getRepositories(): Call<GetReposResponse>
 
 }

@@ -1,4 +1,4 @@
-package com.atlassian.github.test.client
+package com.atlassian.github.tester.client.api
 
 import com.fasterxml.jackson.annotation.JsonProperty
 

@@ -1,4 +1,4 @@
-package com.atlassian.github.test
+package com.atlassian.github.tester.client.factory
 
 import java.time.Instant
 import java.util.Date

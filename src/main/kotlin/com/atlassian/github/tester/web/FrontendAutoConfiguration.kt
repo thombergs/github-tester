@@ -1,4 +1,4 @@
-package com.atlassian.github.test.web
+package com.atlassian.github.tester.web
 
 import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect
 import org.springframework.context.annotation.Bean
